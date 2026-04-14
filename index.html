@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Nutriority - Your Personal Nutrition & Fitness Companion</title>
+    <title>Nutriority - Your Personal Nutrition & Fitness Companion</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -43,10 +44,31 @@
             padding: 0 20px;
         }
 
-        h1 {
-            font-size: 3.5rem;
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
             margin-bottom: 20px;
             animation: fadeInDown 1s ease-out;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
         }
 
         .hero-p {
@@ -167,14 +189,17 @@
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             .hero-p { font-size: 1rem; }
+            .logo-img { width: 45px; height: 45px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>Nutriority</h1>
+        <div class="container header-content">
+            <div class="title-wrapper">
+                <h1>Nutriority</h1>
+            </div>
             <p class="hero-p">Elevate your health. Master your nutrition. Achieve your fitness goals.</p>
             <a href="https://github.com/Nutriority/Installer/releases/download/v1.0.0/Nutriority.apk" class="btn-download" download>Download App (APK)</a>
         </div>
